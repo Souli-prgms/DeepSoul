@@ -11,8 +11,8 @@ MNIST_URL = 'http://deeplearning.net/data/mnist/mnist.pkl.gz'
 
 class Dataset(object):
     def __init__(self, ds, length=None, type='train'):
-        self.x = np.array(ds[0])[:1000]
-        self.y = np.array(ds[1])[:1000]
+        self.x = np.array(ds[0])
+        self.y = np.array(ds[1])
 
         if length is not None:
             if type == 'valid':
