@@ -1,6 +1,16 @@
 # DeepSoul
-Train neural network to find specific food
+CNN from scratch (Numpy only) with MNIST logits as dataset
 
-It's a xresnet architecture based on this [paper](https://arxiv.org/abs/1812.01187) with a binary classification on top.
-You can also predict localization based on this [paper](http://cnnlocalization.csail.mit.edu/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf) (see examples for tomatoes below)
+## Prerequisites
+```
+python3
+numpy
+matplotlib
+tqdm
+```
 
+## How to run
+Clone the repo on your machine and run this command:
+```
+python train.py nb_epochs path/to/mnist/future/download nb_samples_in_training batch_size
+```
